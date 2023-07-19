@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <title>AJDV</title>
+    <link rel="icon" type="image/x-icon" href="https://wegotthiscovered.com/wp-content/uploads/2021/07/Goku-640x321.jpeg">
+    <script
+    nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4/ie11CustomProperties.min.js"><\/script>');</script>
+
+  <link rel="stylesheet" href="dark-mode.css">
+
+  </head>
+  <style type="text/css">
+    .separator-localCssCode {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .separator-localCssCode::before,
+    .separator-localCssCode::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid rgba(128,128,128, .1);
+    }
+
+    .separator-localCssCode:not(:empty)::before {
+      margin-right: .25em;
+    }
+
+    .separator-localCssCode:not(:empty)::after {
+      margin-left: .25em;
+    }
+
+    .imageRemoveGrayScaleLocalCode{
+      filter: grayscale(100%);
+    }
+    .imageRemoveGrayScaleLocalCode:hover{
+      filter: grayscale(0%);
+    }
+  </style>
+  
+  <body>
+    <!--NAV START-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">AJDV</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=" "><i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch" />
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+          <script src="dark-mode-switch.min.js"></script>
+        </div>
+      </div>
+    </nav>
+    <!--NAV END-->
+
+    <div class="p-3">
+      <div class="row p-1 m-2">
+        <!--my name & pic start-->
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="div-my-image">
+            <center>
+              <!-- img style purpose is to FLIP image horizontally-->
+              <style type="text/css">
+                .imageFlipperLocalCode:hover{
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                }
+              </style>
+                <img class="shadow rounded my-image imageFlipperLocalCode" src="images/chitoge.jpg" width="80%" height="500px">              
+            </center>
+          </div>
+          
+        </div>
+
+        <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12 position-relative">
+          <div class="">
+            <p class="position-absolute top-50 start-0 translate-middle-y my-name">
+              <h1 class="display-1"><span class="text-warning"><b>HELLO!</b></span><p>I'm<br>Aldrin John D. Villasis</p></h1>
+              <h5><span class="text-danger"><</span> Web Developer <span class="text-danger">/></span></h5>
+            </p>
+          </div>
+          <br><br>
+          <div class="position-absolute bottom-0 start-0"><span >Download my </span>
+            <a href="document/MyResume.pdf" download target="_blank"><span class="btn btn-outline-dark">Resume</span></a>
+          </div>
+        </div>
+
+        <style type="text/css">
+          /*screen-xs*/
+          @media (max-width: 576px) { 
+            .col-xs-1,
+            .col-xs-2,
+            .col-xs-3,
+            .col-xs-4,
+            .col-xs-5,
+            .col-xs-6,
+            .col-xs-7,
+            .col-xs-8,
+            .col-xs-9,
+            .col-xs-10,
+            .col-xs-11,
+            .col-xs-12 .my-name h1{background-color:red; opacity: .5; position:static; font-size: 12px;}
+          }
+          @media (max-width: 576px) { 
+            .col-xs-1,
+            .col-xs-2,
+            .col-xs-3,
+            .col-xs-4,
+            .col-xs-5,
+            .col-xs-6,
+            .col-xs-7,
+            .col-xs-8,
+            .col-xs-9,
+            .col-xs-10,
+            .col-xs-11,
+            .col-xs-12 .div-my-image img{display: none;}
+          }
+        </style>
+        <!--my name& pic end-->
+
+        <!--about me start-->
+        <div>
+          <br>
+          <br>
+           <!-- about-section-starts -->
+            <div class="about-section row slide-in-right" id="aboutus">
+
+              <div class="text-center col-lg-6 col-md-12 col-sm-12 col-xs-12">
+               <div class="p-3">
+                  <h3>ABOUT ME</h3>
+                  <hr>
+                <p style="line-height: 2.5"><span class="text-warning">Hello!</span> I'm <b>ALDRIN JOHN D. VILLASIS</b> an aspiring graphic artist and web developer from Laguna, Philippines, Studies Bachelor of Science in Information Technology major in Web and Mobile Application development.
+                  <br>
+                  I am also the one who acted as the <b>full-stack</b> web developer in our academic project and I used <b>Bootstrap5</b>, for front-end, <b>PHP</b> for back-end, and <b>SQL</b> as a database.
+                  <br>
+                  <br>
+                  <a href="#about_Me.html" class="text-secondary">READ MORE</a>
+                </p>
+               </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+               <div class="p-3">
+                  <h3>SKILLS</h3>
+                  <hr>
+                  <div class="row">
+                    <div class="col">
+                      <div style="display:;">
+                        <!-- html -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-html">HTML</i></a>
+                        
+                        <!-- CSS -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-css">CSS</i></a>
+                        
+                        <!-- BOOTSTRAP -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-bootstrap">BOOTSTRAPL</i></a>
+
+                        <!-- PHP -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-php">PHP</i></a>
+
+                        <!-- SQL -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-sql">SQL</i></a>
+
+                        <!-- C# -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-cs">C#</i></a>
+
+                        <!-- JAVA -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-java">JAVA</i></a>
+
+                        <!-- PSD -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-psd">PHOTOSHOP</i></a>
+
+                        <!-- Adobe XD -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-file-earmark-pdf">ADOBE XD</i></a>
+
+                        <!-- WORD -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-docx">MS WORD</i></a>
+
+                        <!-- EXCEL -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-file-earmark-excel">MS EXCEL</i></a>
+
+                        <!-- POWERPOINT -->
+                        <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-filetype-ppt">MS POWERPOINT</i></a>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <ul>
+                        <li>Adaptability</li>
+                        <li>Hark working</li>
+                        <li>Attention to details</li>
+                        <li>Problem solving</li>
+                        <li>Multitasking</li>
+                      </ul>
+                    </div>
+                  </div>
+               </div>
+              </div>
+              
+            </div>
+          <!-- about-section-ends -->
+          <div class="clearfix"><br><br><br><br></div>
+          <!-- Project Start -->
+          <div class="container">
+            <center>
+              <h1 class="display-3">
+                <b>PROJECTS</b>
+                <hr>
+              </h1>
+              <div class="row p-2">
+                <div class="col-4"><a href="images/fdmsLoginPage.png"><img class="imageRemoveGrayScaleLocalCode" src="images/fdmsLoginPage.png" style="width: 100%;"></a></div>
+                <div class="col-4"><a href="images/myPortfolio.png"><img class="imageRemoveGrayScaleLocalCode" src="images/myPortfolio.png" style="width: 100%;"></a></div>
+                <div class="col-4"><a href="images/depEdtrackIt.png"><img class="imageRemoveGrayScaleLocalCode" src="images/depEdtrackIt.png" style="width: 100%;"></a></div>
+              </div>
+              <div class="row p-2">
+                <div class="col-4"><img class="imageRemoveGrayScaleLocalCode" src="images/404.png" style="width: 100%;"></div>
+                <div class="col-4"><img class="imageRemoveGrayScaleLocalCode" src="images/404.png" style="width: 100%;"></div>
+                <div class="col-4"><img class="imageRemoveGrayScaleLocalCode" src="images/404.png" style="width: 100%;"></div>
+              </div>
+              <br>
+              <a href="projects.html"><p>SEE ALL</p></a>
+            </center>
+
+          </div>
+        </div>
+        <!-- Project End -->
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 rounded">
+                <div class="p-3">
+                  <h3 class="text-center">CONTACT ME</h3>
+                    <hr>
+                    <p class="text-center"> Want to Contact me? <a class="text-danger" href="mailto:aldrinjohnv@gmail.com?subject=Mail from our Website&body=Dear W3docs Team"><b>Click Here!</b></a></p>
+                    <p class="separator-localCssCode">OR</p>
+                 <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" >
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>Facebook
+                    <br>
+                    <!-- instagram -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-instagram"></i></a>instagram
+                    <br>
+                    <!-- youtube -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-youtube"></i></a>youtube
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <!-- twitter -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-twitter"></i></a>twitter
+                    <br>
+                    <!-- github -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>github
+                    <br>
+                    <!-- stack-overflow -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="bi bi-stack-overflow"></i></a>stack-overflow
+                  </div>
+                 </div>
+                </div>
+                  
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 rounded">                            
+                
+              </div>
+        </div>
+        <div class="row">
+          <div class="col p-3">
+            <nft-card
+            contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+            tokenId="70940667210504530754297358674583420425924958534995890625966253989217100103681">
+            </nft-card>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+          </div>
+          <div class="col p-3">
+            <nft-card
+            contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+            tokenId="70940667210504530754297358674583420425924958534995890625966253989217100103681">
+            </nft-card>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+          </div>
+          <div class="col p-3">
+            <nft-card
+            contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+            tokenId="70940667210504530754297358674583420425924958534995890625966253989217100103681">
+            </nft-card>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+          </div>
+          <div class="col p-3">
+            <nft-card
+            contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+            tokenId="70940667210504530754297358674583420425924958534995890625966253989217100103681">
+            </nft-card>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+          </div>
+          <div class="col p-3">
+            <nft-card
+            contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+            tokenId="70940667210504530754297358674583420425924958534995890625966253989217100103681">
+            </nft-card>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+          </div>
+          <div class="col p-3">
+            <nft-card
+            contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"
+            tokenId="70940667210504530754297358674583420425924958534995890625966253989217100103681">
+            </nft-card>
+            <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!--FAKE Footer start-->
+          <div class="bg-dark p-3">
+            <p class="separator-localCssCode text-white" style="font-size: 10px;">Temporary_Footer</p>
+            <p class="separator-localCssCode text-white"><i class="bi bi-c-circle"> Aldrin_John_D_Villsis</i></p>
+            <p class="separator-localCssCode text-white" style="font-size: 10px;">Temporary_Footer</p>
+          </div>
+          <!--FAKE Footer end-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
